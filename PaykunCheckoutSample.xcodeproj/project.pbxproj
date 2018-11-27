@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		018EA49F21AD1BDD0066F7AE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 018EA49E21AD1BDD0066F7AE /* .gitignore */; };
+		018EAB6621A955B20069193B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 018EAB6521A955B20069193B /* AppDelegate.m */; };
+		018EAB6921A955B20069193B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 018EAB6821A955B20069193B /* ViewController.m */; };
+		018EAB6C21A955B20069193B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018EAB6A21A955B20069193B /* Main.storyboard */; };
+		018EAB6E21A955BE0069193B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 018EAB6D21A955BE0069193B /* Assets.xcassets */; };
+		018EAB7121A955BE0069193B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018EAB6F21A955BE0069193B /* LaunchScreen.storyboard */; };
+		018EAB7421A955BE0069193B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 018EAB7321A955BE0069193B /* main.m */; };
+		018EAB7C21A957990069193B /* PayKun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018EAB7A21A957920069193B /* PayKun.framework */; };
+		018EAB7D21A957990069193B /* PayKun.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 018EAB7A21A957920069193B /* PayKun.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		018EAB7E21A957990069193B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				018EAB7D21A957990069193B /* PayKun.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		018EA49E21AD1BDD0066F7AE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		018EAB6121A955B20069193B /* PaykunCheckoutSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaykunCheckoutSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		018EAB6421A955B20069193B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		018EAB6521A955B20069193B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		018EAB6721A955B20069193B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		018EAB6821A955B20069193B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		018EAB6B21A955B20069193B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		018EAB6D21A955BE0069193B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		018EAB7021A955BE0069193B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		018EAB7221A955BE0069193B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		018EAB7321A955BE0069193B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		018EAB7A21A957920069193B /* PayKun.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PayKun.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		018EAB5E21A955B20069193B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018EAB7C21A957990069193B /* PayKun.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		018EAB5821A955B20069193B = {
+			isa = PBXGroup;
+			children = (
+				018EA49E21AD1BDD0066F7AE /* .gitignore */,
+				018EAB6321A955B20069193B /* PaykunCheckoutSample */,
+				018EAB6221A955B20069193B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		018EAB6221A955B20069193B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				018EAB6121A955B20069193B /* PaykunCheckoutSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		018EAB6321A955B20069193B /* PaykunCheckoutSample */ = {
+			isa = PBXGroup;
+			children = (
+				018EAB7A21A957920069193B /* PayKun.framework */,
+				018EAB6421A955B20069193B /* AppDelegate.h */,
+				018EAB6521A955B20069193B /* AppDelegate.m */,
+				018EAB6721A955B20069193B /* ViewController.h */,
+				018EAB6821A955B20069193B /* ViewController.m */,
+				018EAB6A21A955B20069193B /* Main.storyboard */,
+				018EAB6D21A955BE0069193B /* Assets.xcassets */,
+				018EAB6F21A955BE0069193B /* LaunchScreen.storyboard */,
+				018EAB7221A955BE0069193B /* Info.plist */,
+				018EAB7321A955BE0069193B /* main.m */,
+			);
+			path = PaykunCheckoutSample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		018EAB6021A955B20069193B /* PaykunCheckoutSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 018EAB7721A955BE0069193B /* Build configuration list for PBXNativeTarget "PaykunCheckoutSample" */;
+			buildPhases = (
+				018EAB5D21A955B20069193B /* Sources */,
+				018EAB5E21A955B20069193B /* Frameworks */,
+				018EAB5F21A955B20069193B /* Resources */,
+				018EAB7E21A957990069193B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaykunCheckoutSample;
+			productName = PaykunCheckoutSample;
+			productReference = 018EAB6121A955B20069193B /* PaykunCheckoutSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		018EAB5921A955B20069193B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Paykun Payment Solutions Pvt. Ltd.";
+				TargetAttributes = {
+					018EAB6021A955B20069193B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 018EAB5C21A955B20069193B /* Build configuration list for PBXProject "PaykunCheckoutSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 018EAB5821A955B20069193B;
+			productRefGroup = 018EAB6221A955B20069193B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				018EAB6021A955B20069193B /* PaykunCheckoutSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		018EAB5F21A955B20069193B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018EA49F21AD1BDD0066F7AE /* .gitignore in Resources */,
+				018EAB7121A955BE0069193B /* LaunchScreen.storyboard in Resources */,
+				018EAB6E21A955BE0069193B /* Assets.xcassets in Resources */,
+				018EAB6C21A955B20069193B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		018EAB5D21A955B20069193B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018EAB6921A955B20069193B /* ViewController.m in Sources */,
+				018EAB7421A955BE0069193B /* main.m in Sources */,
+				018EAB6621A955B20069193B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		018EAB6A21A955B20069193B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				018EAB6B21A955B20069193B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		018EAB6F21A955BE0069193B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				018EAB7021A955BE0069193B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		018EAB7521A955BE0069193B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		018EAB7621A955BE0069193B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		018EAB7821A955BE0069193B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PaykunCheckoutSample",
+				);
+				INFOPLIST_FILE = PaykunCheckoutSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paykun.PaykunCheckoutSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		018EAB7921A955BE0069193B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PaykunCheckoutSample",
+				);
+				INFOPLIST_FILE = PaykunCheckoutSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paykun.PaykunCheckoutSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		018EAB5C21A955B20069193B /* Build configuration list for PBXProject "PaykunCheckoutSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018EAB7521A955BE0069193B /* Debug */,
+				018EAB7621A955BE0069193B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		018EAB7721A955BE0069193B /* Build configuration list for PBXNativeTarget "PaykunCheckoutSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018EAB7821A955BE0069193B /* Debug */,
+				018EAB7921A955BE0069193B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 018EAB5921A955B20069193B /* Project object */;
+}
