@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		014396D321C910FB00DF0754 /* PayKun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014396D121C910F400DF0754 /* PayKun.framework */; };
+		014396D421C910FB00DF0754 /* PayKun.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 014396D121C910F400DF0754 /* PayKun.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		018EAB6621A955B20069193B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 018EAB6521A955B20069193B /* AppDelegate.m */; };
 		018EAB6921A955B20069193B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 018EAB6821A955B20069193B /* ViewController.m */; };
 		018EAB6C21A955B20069193B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018EAB6A21A955B20069193B /* Main.storyboard */; };
 		018EAB6E21A955BE0069193B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 018EAB6D21A955BE0069193B /* Assets.xcassets */; };
 		018EAB7121A955BE0069193B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018EAB6F21A955BE0069193B /* LaunchScreen.storyboard */; };
 		018EAB7421A955BE0069193B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 018EAB7321A955BE0069193B /* main.m */; };
-		018EAB7C21A957990069193B /* PayKun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018EAB7A21A957920069193B /* PayKun.framework */; };
-		018EAB7D21A957990069193B /* PayKun.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 018EAB7A21A957920069193B /* PayKun.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				018EAB7D21A957990069193B /* PayKun.framework in Embed Frameworks */,
+				014396D421C910FB00DF0754 /* PayKun.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		014396D121C910F400DF0754 /* PayKun.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PayKun.framework; sourceTree = "<group>"; };
 		018EAB6121A955B20069193B /* PaykunCheckoutSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaykunCheckoutSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		018EAB6421A955B20069193B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		018EAB6521A955B20069193B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		018EAB7021A955BE0069193B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		018EAB7221A955BE0069193B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		018EAB7321A955BE0069193B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		018EAB7A21A957920069193B /* PayKun.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PayKun.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				018EAB7C21A957990069193B /* PayKun.framework in Frameworks */,
+				014396D321C910FB00DF0754 /* PayKun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +76,7 @@
 		018EAB6321A955B20069193B /* PaykunCheckoutSample */ = {
 			isa = PBXGroup;
 			children = (
-				018EAB7A21A957920069193B /* PayKun.framework */,
+				014396D121C910F400DF0754 /* PayKun.framework */,
 				018EAB6421A955B20069193B /* AppDelegate.h */,
 				018EAB6521A955B20069193B /* AppDelegate.m */,
 				018EAB6721A955B20069193B /* ViewController.h */,
