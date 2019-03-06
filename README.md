@@ -70,5 +70,5 @@ Fail
 ```
 
 
-### For further help, see our [Documentation](https://docs.paykun.com) or [Contact Us](https://paykun.com/contact)
+### For further help, see our [Documentation](https://paykun.com/docs) or [Contact Us](https://paykun.com/contact)
 
