@@ -13,7 +13,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    objPaykun = [[PaykunCheckout alloc] initWithKey: @"297E1CBBD172DA76325163469CB8D1EA" merchantId: @"357851063624213"  isLive: false andDelegate: self];
+    objPaykun = [[PaykunCheckout alloc] initWithKey: @"297E1CBBD172DA76325163469CB8D1EA" merchantId: @"357851063624213" isLive: false andDelegate: self];
 }
 
 #pragma mark - IBAction Method
@@ -24,7 +24,7 @@
         orderId = [orderId stringByAppendingString:[[NSNumber numberWithInt:arc4random_uniform(10)] stringValue]];
     }
     
-    [objPaykun CheckoutWithCustomerName:@"Paul" customerEmail:@"example@mail.com" customerMobile:@"" productName:@"Stationery" orderNo:orderId amount:@"1" viewController:self];
+    [objPaykun CheckoutWithCustomerName:@"Paul" customerEmail:@"example@mail.com" customerMobile:@"" productName:@"Stationery" orderNo:orderId amount:@"10" viewController:self];
 }
 
 #pragma mark - PaykunCheckoutDelegate
