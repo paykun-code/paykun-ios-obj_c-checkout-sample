@@ -13,7 +13,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    objPaykun = [[PaykunCheckout alloc] initWithKey: @"297E1CBBD172DA76325163469CB8D1EA" merchantId: @"357851063624213" isLive: false andDelegate: self];
+    // initialization method
+    objPaykun = [[PaykunCheckout alloc] initWithKey:@"YourApiKey" merchantId:@"YourMerchantId" isLive:false andDelegate: self];
 }
 
 #pragma mark - IBAction Method
@@ -24,7 +25,8 @@
         orderId = [orderId stringByAppendingString:[[NSNumber numberWithInt:arc4random_uniform(10)] stringValue]];
     }
     
-    [objPaykun CheckoutWithCustomerName:@"Paul" customerEmail:@"example@mail.com" customerMobile:@"" productName:@"Stationery" orderNo:orderId amount:@"10" viewController:self];
+    // open checkout method
+    [objPaykun checkoutWithCustomerName:@"Paul" customerEmail:@"example@mail.com" customerMobile:@"" productName:@"Stationery" orderNo:orderId amount:@"10" viewController:self];
 }
 
 #pragma mark - PaykunCheckoutDelegate
@@ -36,6 +38,11 @@
     
     [alert addAction:okButton];
     [self presentViewController:alert animated:YES completion:nil];
+    
+    // get transaction detail
+    [objPaykun getTransactionByPaymentId:[responce valueForKey:@"req_id"] block:^(NSDictionary * _Nonnull responce) {
+        NSLog(@"responce %@",responce);
+    }];
 }
 
 - (void)onPaymentSucceed:(NSDictionary *)responce {
@@ -46,6 +53,11 @@
     
     [alert addAction:okButton];
     [self presentViewController:alert animated:YES completion:nil];
+    
+    // get transaction detail
+    [objPaykun getTransactionByPaymentId:[responce valueForKey:@"req_id"] block:^(NSDictionary * _Nonnull responce) {
+        NSLog(@"responce %@",responce);
+    }];
 }
 
 
