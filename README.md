@@ -7,9 +7,13 @@ The iOS SDK library lets you seamlessly integrate the entire payment ecosystem i
 ### Step 1: Get Access Token (For Device)
 
 •    Device access token is bounded with the application package name; hence one Access Token per Application will be granted. 
+
 •    You can generate/regenerate Access token and API KEY by logging into your PayKun Admin panel.
+
 •    Go to: Settings => Security => Device API KEY Here you will find generate button, if you have not generated any Device Access Token before.
+
 •    You must provide the package name of your application to generate the access token.
+
 •    If you have ever generated any Access Token, you will see Package Name with Creation date of it. You won’t be able to retrieve any old Access Token (Due to security concerns), that’s why we have provided regenerate option.
 
 ```
