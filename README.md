@@ -71,18 +71,14 @@ Add the following code to your ViewController or where ever you want to initia
 Success
 ```
 - (void)onPaymentSucceed:(NSDictionary *)responce {
-  NSString *msg = [NSString stringWithFormat:@"payment success with req_id:%@",[responce valueForKey:@"req_id"]]
-  UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@“Success” message:msg delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil]
-  [alert show];
+  NSLog(@"responce: %@",responce);
 }
 ```
 
 Fail
 ```
 - (void)onPaymentFailed:(NSDictionary *)responce {
-  NSString *msg = [NSString stringWithFormat:@"payment fail with req_id:%@",[responce valueForKey:@"req_id"]]
-  UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error" message:msg delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil]
-  [alert show];
+  NSLog(@"responce: %@",responce);
 }
 ```
 

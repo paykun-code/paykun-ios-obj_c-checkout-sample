@@ -32,30 +32,20 @@
 #pragma mark - PaykunCheckoutDelegate
 - (void)onPaymentFailed:(NSDictionary *)responce {
     
-    NSString *msg = [NSString stringWithFormat:@"fail with req_id:%@",[responce valueForKey:@"req_id"]];
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Oops" message:msg preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"OKay" style:UIAlertActionStyleDefault handler:nil];
-    
-    [alert addAction:okButton];
-    [self presentViewController:alert animated:YES completion:nil];
+    NSString *paymentId = [responce valueForKey:@"transactionId"];
     
     // get transaction detail
-    [objPaykun getTransactionByPaymentId:[responce valueForKey:@"req_id"] block:^(NSDictionary * _Nonnull responce) {
+    [objPaykun getTransactionByPaymentId:paymentId block:^(NSDictionary * _Nonnull responce) {
         NSLog(@"responce %@",responce);
     }];
 }
 
 - (void)onPaymentSucceed:(NSDictionary *)responce {
     
-    NSString *msg = [NSString stringWithFormat:@"success with req_id:%@",[responce valueForKey:@"req_id"]];
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Oops" message:msg preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"OKay" style:UIAlertActionStyleDefault handler:nil];
-    
-    [alert addAction:okButton];
-    [self presentViewController:alert animated:YES completion:nil];
+    NSString *paymentId = [responce valueForKey:@"transactionId"];
     
     // get transaction detail
-    [objPaykun getTransactionByPaymentId:[responce valueForKey:@"req_id"] block:^(NSDictionary * _Nonnull responce) {
+    [objPaykun getTransactionByPaymentId:paymentId block:^(NSDictionary * _Nonnull responce) {
         NSLog(@"responce %@",responce);
     }];
 }
