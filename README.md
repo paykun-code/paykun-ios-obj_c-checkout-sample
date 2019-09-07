@@ -1,6 +1,8 @@
 # iOS Checkout SDK
 
-The iOS SDK library lets you seamlessly integrate the entire payment ecosystem in your iOS application and start accepting payments with Paykun.
+The iOS SDK library lets you seamlessly integrate the entire payment ecosystem in your iOS application and start accepting payments with [Paykun]((https://paykun.com/))
+
+This framework only supports iOS version 9.0 and later
 
 ## Features | Doc
 
@@ -41,18 +43,19 @@ To initialize the Paykun SDK, you will need the following:
 
 •    isLive (true for live environment and false for test environment)
 
-```
+```objc
 #import <Paykun/Paykun.h>
 
 @interface ViewController () <PaykunCheckoutDelegate> {
   PaykunCheckout *objPaykun;
 }
+@end
 
 @implementation ViewController
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  objPaykun = [[PaykunCheckout alloc] initWithKey:@"YourApiKey" merchantId:@"YourMerchantId" isLive:true andDelegate:self];
+  objPaykun = [[PaykunCheckout alloc] initWithKey: @"YourApiKey" merchantId: @"YourMerchantId" isLive: true andDelegate: self];
 }
 ```
 
@@ -60,23 +63,23 @@ To initialize the Paykun SDK, you will need the following:
 
 Add the following code to your ViewController or where ever you want to initialize payments:
 
-```
+```objc
 - (void)showPaymentCheckout { 
-  [objPaykun checkoutWithCustomerName:@“name” customerEmail:@“email” customerMobile:@“mobile” productName:@“product” orderNo:@“order” amount:@“amount” viewController:self];
+  [objPaykun checkoutWithCustomerName: @“name” customerEmail: @“email” customerMobile: @“mobile” productName: @“product” orderNo: @“order” amount: @“amount” viewController: self];
 }
 ```
 
 ### Step 5: Handle Success and Fail Event
 
 Success
-```
+```objc
 - (void)onPaymentSucceed:(NSDictionary *)responce {
   NSLog(@"responce: %@",responce);
 }
 ```
 
 Fail
-```
+```objc
 - (void)onPaymentFailed:(NSDictionary *)responce {
   NSLog(@"responce: %@",responce);
 }
@@ -84,8 +87,8 @@ Fail
 
 ### Get Transaction Details
 
-```
-[objPaykun getTransactionByPaymentId:@"PaymentId" block:^(NSDictionary * _Nonnull responce) {
+```objc
+[objPaykun getTransactionByPaymentId: @"PaymentId" block:^(NSDictionary * _Nonnull responce) {
     NSLog(@"responce: %@",responce);
 }];
 ```
