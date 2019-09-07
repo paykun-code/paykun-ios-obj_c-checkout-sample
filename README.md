@@ -1,6 +1,6 @@
 # iOS Checkout SDK
 
-The iOS SDK library lets you seamlessly integrate the entire payment ecosystem in your iOS application and start accepting payments with [Paykun]((https://paykun.com/))
+The iOS SDK library lets you seamlessly integrate the entire payment ecosystem in your iOS application and start accepting payments with [PayKun](https://paykun.com/)
 
 This framework only supports iOS version 9.0 and later
 
