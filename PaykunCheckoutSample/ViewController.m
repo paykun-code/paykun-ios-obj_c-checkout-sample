@@ -26,7 +26,7 @@
     }
     
     // open checkout method
-    [objPaykun checkoutWithCustomerName:@"Paul" customerEmail:@"example@mail.com" customerMobile:@"" productName:@"Stationery" orderNo:orderId amount:@"10" viewController:self];
+    [objPaykun checkoutWithCustomerName:@"Paul" customerEmail:@"example@mail.com" customerMobile:@"1234567890" productName:@"Stationery" orderNo:orderId amount:@"10" currency:@"INR" viewController:self];
 }
 
 #pragma mark - PaykunCheckoutDelegate

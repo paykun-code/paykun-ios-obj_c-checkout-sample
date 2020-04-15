@@ -6,17 +6,17 @@ This framework only supports iOS version 9.0 and later
 
 ## Features | Doc
 
-### Step 1: Get Access Token (For Device)
+### Step 1: How to Generate Access Token For Device
 
-•    Device access token is bounded with the application package name; hence one Access Token per Application will be granted. 
+*   Device access token is bounded with the application package name; hence one Access Token per Application will be granted. 
 
-•    You can generate/regenerate Access token and API KEY by logging into your PayKun Admin panel.
+*    You can generate/regenerate Access token and API KEY by logging into your PayKun Admin panel.
 
-•    Go to: Settings => Security => Device API KEY Here you will find generate button, if you have not generated any Device Access Token before.
+*   Go to: Settings => Security => Device API KEY Here you will find generate button, if you have not generated any Device Access Token before.
 
-•    You must provide the package name of your application to generate the access token.
+*    You must provide the package name of your application to generate the access token.
 
-•    If you have ever generated any Access Token, you will see Package Name with Creation date of it. You won’t be able to retrieve any old Access Token (Due to security concerns), that’s why we have provided regenerate option.
+*   If you have ever generated any Access Token, you will see Package Name with Creation date of it. You won’t be able to retrieve any old Access Token (Due to security concerns), that’s why we have provided regenerate option.
 
 ```
 Note: Once you regenerate API KEY, your old API KEY will immediately stop working. So be double sure and cautious before regenerating API KEY.
@@ -31,17 +31,20 @@ Follow the instruction given below to import the SDK library to your Swift or Ob
 3.    Select PayKun.framework in the directory you just unzipped.
 4.    Select the Copy items if needed check-box.
 5.    Click Add.
-6.    Navigate to Target settings > General and add the Paykun.framework in both Embeded Binaries and Linked Frameworks and Libraries.
+6.    Navigate to Target settings > General and add the Paykun.framework in both Embeded Binaries and Linked Frameworks and Libraries(below xcode 11).
+```
+Note: For Xcode 11 and later, ensure that you have the framework added in Frameworks, Libraries, and Embed Content under Target settings - General. Change Embed status from - 'Do not Embed' to 'Embed & Sign'.
+```
 
 ### Step 3: Initialize the Paykun SDK
 
 To initialize the Paykun SDK, you will need the following:
 
-•    Device API key 
+*    Device API key 
 
-•    Merchant Id
+*   Merchant Id
 
-•    isLive (true for live environment and false for test environment)
+*    isLive (true for live environment and false for test environment)
 
 ```objc
 #import <Paykun/Paykun.h>
@@ -65,7 +68,7 @@ Add the following code to your ViewController or where ever you want to initia
 
 ```objc
 - (void)showPaymentCheckout { 
-  [objPaykun checkoutWithCustomerName: @“name” customerEmail: @“email” customerMobile: @“mobile” productName: @“product” orderNo: @“order” amount: @“amount” viewController: self];
+  [objPaykun checkoutWithCustomerName: @“name” customerEmail: @“email” customerMobile: @“mobile” productName: @“product” orderNo: @“order” amount: @“amount” currency:@"currency code" viewController: self];
 }
 ```
 
